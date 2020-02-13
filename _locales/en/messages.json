@@ -1,0 +1,21 @@
+{
+    "extensionName": {
+      "message": "Hide tabs",
+      "description": "Name of the extension."
+    },
+  
+    "extensionDescription": {
+      "message": "This extension enables you to quickly hide and restore tabs",
+      "description": "Description of the extension."
+    },
+
+    "hideButton": {
+      "message": "Hide tabs",
+      "description": "Hides tabs"
+    },
+
+    "showButton": {
+      "message": "Restore hidden tabs",
+      "description": "Restores hidden tabs"
+    }
+}

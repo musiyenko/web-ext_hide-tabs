@@ -1,0 +1,21 @@
+{
+    "extensionName": {
+      "message": "Nascondi le schede",
+      "description": "Nome dell'estensione"
+    },
+  
+    "extensionDescription": {
+      "message": "Questa estensione consente di nascondere e ripristinare rapidamente le schede del browser",
+      "description": "Descrizione dell'estensione"
+    },
+
+    "hideButton": {
+      "message": "Nascondi le schede",
+      "description": "Nasconde le schede"
+    },
+
+    "showButton": {
+      "message": "Ripristina le schede nascoste",
+      "description": "Ripristina le schede nascoste"
+    }
+}
