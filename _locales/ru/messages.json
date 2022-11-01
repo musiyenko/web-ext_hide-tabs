@@ -17,5 +17,20 @@
     "showButton": {
       "message": "Восстановить скрытые вкладки",
       "description": "Восстанавливает скрытые вкладки"
+    },
+
+    "optionOpenEmptyTab": {
+      "message": "Открывать пустую вкладку",
+      "description": "Открывает пустую вкладку"
+    },
+
+    "optionWebsite": {
+      "message": "Открыть этот сайт вместо пустой вкладки",
+      "description": "Открывает сайт вместо пустой вкладки"
+    },
+
+    "optionSaveButton": {
+      "message": "Сохранить",
+      "description": "Кнопка сохранения настроек"
     }
 }

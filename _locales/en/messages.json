@@ -17,5 +17,20 @@
     "showButton": {
       "message": "Restore hidden tabs",
       "description": "Restores hidden tabs"
+    },
+
+    "optionOpenEmptyTab": {
+      "message": "Open an empty new tab when hiding others",
+      "description": "Opens an empty new tab when hiding others"
+    },
+
+    "optionWebsite": {
+      "message": "Open this website when hiding tabs",
+      "description": "Opens a website instead of an empty tab"
+    },
+
+    "optionSaveButton": {
+      "message": "Save",
+      "description": "Save button"
     }
 }

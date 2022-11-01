@@ -17,5 +17,20 @@
     "showButton": {
       "message": "Ripristina le schede nascoste",
       "description": "Ripristina le schede nascoste"
+    },
+
+    "optionOpenEmptyTab": {
+      "message": "Apri un tab vuoto quando nascondiamo altri tab",
+      "description": "Apre un tab vuoto quando nascondiamo altri tab"
+    },
+
+    "optionWebsite": {
+      "message": "Apri questo sito quando nascondo i tab",
+      "description": "Apre un sito scelto invece di un tab vuoto"
+    },
+
+    "optionSaveButton": {
+      "message": "Salva",
+      "description": "Tasto di salvataggio"
     }
 }
