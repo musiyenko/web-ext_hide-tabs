@@ -62,4 +62,13 @@ const killEmergencyTabs = () => {
   })
 }
 
+function handleMessage(message, sender, sendResponse) {
+  if (message.toUpperCase() === "HIDE_TABS") {
+    toggleTabs();
+  }
+  
+  sendResponse({ response: "Message received" });
+}
+
 browser.browserAction.onClicked.addListener(toggleTabs);
+browser.runtime.onMessageExternal.addListener(handleMessage);
