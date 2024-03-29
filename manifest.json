@@ -2,14 +2,14 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "2.0",
+  "version": "2.1",
   "developer": {
     "name": "Sergey Musiyenko",
     "url": "https://sy.mk"
   },
   "browser_specific_settings": {
     "gecko": {
-      "strict_min_version": "63.0",
+      "strict_min_version": "79.0",
       "id": "{6ed686d2-6ecd-4659-bc12-5e1252cd8a2d}"
     }
   },
