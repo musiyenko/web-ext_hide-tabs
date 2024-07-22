@@ -1,5 +1,6 @@
 const TITLE_HIDE = browser.i18n.getMessage("hideButton");
 const TITLE_SHOW = browser.i18n.getMessage("showButton");
+let emergencyTabId = null;
 
 const setupAddon = ({ reason }) => {
   if (reason === 'install') {
@@ -20,7 +21,10 @@ const toggleTabs = () => {
       browser.tabs.query({ currentWindow: true, pinned: false }).then((tabs) => {
         let optionsPromise = browser.storage.sync.get(["is_empty_tab", "new_tab_website"]).then(options => {
           const tabOptions = options.is_empty_tab ? {} : { url: options.new_tab_website }
-          browser.tabs.create(tabOptions);
+          browser.tabs.create(tabOptions).then(tab => {
+            emergencyTabId = tab.id
+          });
+          
           for (let tab of tabs) {
             browser.tabs.hide(tab.id);
           }
@@ -33,8 +37,6 @@ const toggleTabs = () => {
 
           browser.browserAction.setBadgeTextColor({ color: "black" })
         })
-
-        killEmergencyTabs();
       })
     } else {
       browser.browserAction.setBadgeText({ text: "" });
@@ -46,7 +48,7 @@ const toggleTabs = () => {
         }
       })
 
-      killEmergencyTabs();
+      killEmergencyTab();
     }
   }, error => {
     console.log(error)
@@ -54,12 +56,12 @@ const toggleTabs = () => {
 
 }
 
-const killEmergencyTabs = () => {
-  browser.tabs.query({ url: "about:newtab" }).then(tabs => {
-    for (let tab of tabs) {
+const killEmergencyTab = () => {
+  if (emergencyTabId) {
+    browser.tabs.get(emergencyTabId).then(tab => {
       browser.tabs.remove(tab.id)
-    }
-  })
+    })
+  }
 }
 
 function handleMessage(message, sender, sendResponse) {
