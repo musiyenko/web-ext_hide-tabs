@@ -29,6 +29,11 @@
       "description": "Apre un sito scelto invece di un tab vuoto"
     },
 
+    "optionUnloadTabs": {
+      "message": "Scarica le schede nascoste per risparmiare memoria",
+      "description": "Scarica le schede nascoste per risparmiare memoria"
+    },
+
     "optionSaveButton": {
       "message": "Salva",
       "description": "Tasto di salvataggio"

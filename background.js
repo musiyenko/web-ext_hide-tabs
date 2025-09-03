@@ -6,7 +6,8 @@ const setupAddon = ({ reason }) => {
   if (reason === 'install') {
     browser.storage.sync.set({
       is_empty_tab: true,
-      new_tab_website: "https://www.mozilla.org"
+      new_tab_website: "https://www.mozilla.org",
+      unload_tabs: false
     });
   }
 }
@@ -19,7 +20,7 @@ const toggleTabs = () => {
       browser.browserAction.setTitle({ title: TITLE_SHOW });
 
       browser.tabs.query({ currentWindow: true, pinned: false }).then((tabs) => {
-        let optionsPromise = browser.storage.sync.get(["is_empty_tab", "new_tab_website"]).then(options => {
+        let optionsPromise = browser.storage.sync.get(["is_empty_tab", "new_tab_website", "unload_tabs"]).then(options => {
           const tabOptions = options.is_empty_tab ? {} : { url: options.new_tab_website }
           browser.tabs.create(tabOptions).then(tab => {
             emergencyTabId = tab.id
@@ -27,6 +28,9 @@ const toggleTabs = () => {
           
           for (let tab of tabs) {
             browser.tabs.hide(tab.id);
+            if (options.unload_tabs) {
+              browser.tabs.discard(tab.id);
+            }
           }
 
           browser.browserAction.setBadgeText({
