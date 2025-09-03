@@ -29,6 +29,11 @@
       "description": "Opens a website instead of an empty tab"
     },
 
+    "optionUnloadTabs": {
+      "message": "Unload hidden tabs to save memory.",
+      "description": "Unloads hidden tabs to save memory."
+    },
+
     "optionSaveButton": {
       "message": "Save",
       "description": "Save button"
