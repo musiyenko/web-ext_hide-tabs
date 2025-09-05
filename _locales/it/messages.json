@@ -37,5 +37,25 @@
     "optionSaveButton": {
       "message": "Salva",
       "description": "Tasto di salvataggio"
+    },
+
+    "hideThisTab": {
+      "message": "Nascondi solo questa scheda",
+      "description": "Voce del menu contestuale per nascondere la scheda corrente"
+    },
+
+    "hideOtherTabs": {
+      "message": "Nascondi tutte le schede tranne questa",
+      "description": "Voce del menu contestuale per nascondere tutte le altre schede"
+    },
+
+    "hideAllTabs": {
+      "message": "Nascondi tutte le schede",
+      "description": "Voce del menu contestuale per nascondere tutte le schede"
+    },
+
+    "optionsMenuItem": {
+      "message": "Mostra opzioni",
+      "description": "Mostra la pagina delle opzioni"
     }
 }
