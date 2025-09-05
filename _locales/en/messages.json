@@ -37,5 +37,25 @@
     "optionSaveButton": {
       "message": "Save",
       "description": "Save button"
+    },
+
+    "hideThisTab": {
+      "message": "Hide this tab only",
+      "description": "Context menu item to hide the current tab"
+    },
+
+    "hideOtherTabs": {
+      "message": "Hide other tabs except this one",
+      "description": "Context menu item to hide all other tabs"
+    },
+
+    "hideAllTabs": {
+      "message": "Hide all tabs",
+      "description": "Context menu item to hide all tabs"
+    },
+
+    "optionsMenuItem": {
+      "message": "Show options",
+      "description": "Shows options page"
     }
 }
