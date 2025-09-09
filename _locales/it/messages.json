@@ -34,9 +34,19 @@
       "description": "Scarica le schede nascoste per risparmiare memoria"
     },
 
+    "optionShowContextMenu": {
+      "message": "Mostra il menu contestuale (tasto destro del mouse su qualsiasi scheda)",
+      "description": "Mostra il menu contestuale (tasto destro del mouse su qualsiasi scheda)"
+    },
+
     "optionSaveButton": {
       "message": "Salva",
       "description": "Tasto di salvataggio"
+    },
+    
+    "openShortcutSettings": {
+      "message": "Apri le impostazioni delle scorciatoie da tastiera",
+      "description": "Apri le impostazioni delle scorciatoie da tastiera"
     },
 
     "hideThisTab": {
@@ -57,5 +67,20 @@
     "optionsMenuItem": {
       "message": "Mostra opzioni",
       "description": "Mostra la pagina delle opzioni"
+    },
+
+    "hideAllTabsCmd": {
+      "message": "Nascondi tutte le schede",
+      "description": "Nasconde tutte le schede"
+    },
+
+    "unloadAllTabsCmd": {
+      "message": "Scarica tutte le schede nascoste",
+      "description": "Scarica tutte le schede nascoste per risparmiare memoria"
+    },
+
+    "hideAndUnloadTabsCmd": {
+      "message": "Nascondi e scarica tutte le schede",
+      "description": "Nasconde e scarica tutte le schede per risparmiare memoria"
     }
 }

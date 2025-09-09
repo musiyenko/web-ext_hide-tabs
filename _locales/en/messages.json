@@ -34,9 +34,19 @@
       "description": "Unloads hidden tabs to save memory."
     },
 
+    "optionShowContextMenu": {
+      "message": "Show context menu (RMB on any tab)",
+      "description": "Shows context menu (RMB on any tab)"
+    },
+
     "optionSaveButton": {
       "message": "Save",
       "description": "Save button"
+    },
+
+    "openShortcutSettings": {
+      "message": "Open Shortcut Settings",
+      "description": "Button to open the browser shortcut settings"
     },
 
     "hideThisTab": {
@@ -57,5 +67,20 @@
     "optionsMenuItem": {
       "message": "Show options",
       "description": "Shows options page"
+    },
+
+    "hideAllTabsCmd": {
+      "message": "Hide all tabs",
+      "description": "Hides all tabs"
+    },
+
+    "unloadAllTabsCmd": {
+      "message": "Unload all hidden tabs",
+      "description": "Unloads all hidden tabs to save memory"
+    },
+
+    "hideAndUnloadTabsCmd": {
+      "message": "Hide and unload all tabs",
+      "description": "Hides and unloads all tabs to save memory"
     }
 }
