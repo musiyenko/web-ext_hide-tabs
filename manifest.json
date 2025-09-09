@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "developer": {
     "name": "Sergey Musiyenko",
     "url": "https://sy.mk"
@@ -46,15 +46,9 @@
       "description": "__MSG_hideAllTabsCmd__"
     },
     "unload-all-tabs": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+2"
-      },
       "description": "__MSG_unloadAllTabsCmd__"
     },
     "hide-and-unload-tabs": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+3"
-      },
       "description": "__MSG_hideAndUnloadTabsCmd__"
     }
   },
