@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="options.css">
 </head>
 
-<body>
+<body class="hide-tabs-options">
   <form class="form">
     <div class="form__field">
       <label class="" for="is_empty_tab" id="label_is_empty_tab">Open an empty new tab when hiding tabs?</label>
@@ -24,7 +24,15 @@
         <span class="slider round"></span>
       </label>
     </div>
-    
+
+    <div class="form__field">
+      <label class="" for="show_context_menu" id="label_show_context_menu">Show context menu (RMB on any tab)?</label>
+      <label class="switch">
+        <input type="checkbox" id="show_context_menu">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
     <div class="form__field">
       <label for="website" id="label_website">Open this website:</label>
       <input type="text" id="website" name="website" />
@@ -32,6 +40,8 @@
     <button type="submit" class="btn btn-default form__field" id="label_save_button">Save</button>
   </form>
 
+  <button type="button" class="btn btn-secondary form__field" id="open_shortcut_settings">Open Shortcut
+    Settings</button>
   <script src="options.js"></script>
 </body>
 

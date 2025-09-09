@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "2.4",
+  "version": "2.5.1",
   "developer": {
     "name": "Sergey Musiyenko",
     "url": "https://sy.mk"
@@ -10,7 +10,10 @@
   "browser_specific_settings": {
     "gecko": {
       "strict_min_version": "79.0",
-      "id": "{6ed686d2-6ecd-4659-bc12-5e1252cd8a2d}"
+      "id": "{6ed686d2-6ecd-4659-bc12-5e1252cd8a2d}",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   },
   "icons": {
@@ -38,9 +41,21 @@
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Q",
-        "linux": "Ctrl+Shift+Q"
-      }
+        "default": "Ctrl+Shift+Q"
+      },
+      "description": "__MSG_hideAllTabsCmd__"
+    },
+    "unload-all-tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+2"
+      },
+      "description": "__MSG_unloadAllTabsCmd__"
+    },
+    "hide-and-unload-tabs": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+3"
+      },
+      "description": "__MSG_hideAndUnloadTabsCmd__"
     }
   },
   "permissions": [

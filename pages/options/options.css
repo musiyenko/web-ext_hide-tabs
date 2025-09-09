@@ -3,6 +3,11 @@ body {
     width: 80%;
 }
 
+.hide-tabs-options {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .switch {
     position: relative;
     display: inline-block;
